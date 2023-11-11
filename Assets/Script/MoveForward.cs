@@ -6,7 +6,7 @@ public class MoveForward : MonoBehaviour
 {
     private float speed = 30;
     private PlayerController playerControllerScript;
-    private float rightBound = -15;
+    private float rightBound = 2;
 
     // Start is called before the first frame update
     void Start()
