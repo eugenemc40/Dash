@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    private float speed = 30;
+    private float speed = 15;
     private PlayerController playerControllerScript;
-    private float rightBound = 2;
+    private float rightBound = -15;
 
     // Start is called before the first frame update
     void Start()

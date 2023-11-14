@@ -10,13 +10,13 @@ public class Background : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
-        repeatLenth = GetComponent<BoxCollider>().size.x / 2;
+        repeatLenth = GetComponent<BoxCollider>().size.z / 2;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < startPos.x-repeatLenth)
+        if (transform.position.z < startPos.z-repeatLenth)
         {
             transform.position = startPos;
         }
