@@ -6,13 +6,14 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    public UnityEngine.UIElements.ProgressBar Pb;
+    public ProgressBar Pb;
 
 
     // Start is called before the first frame update
     void Start()
     {
-     //game object loaded with 3 hearts   
+        //game object loaded with 3 hearts   
+        Pb.BarValue = 100;
     }
 
     // Update is called once per frame
