@@ -7,6 +7,7 @@ public class LifeGain : MonoBehaviour
     private ProgressBar Pb;
     private PlayerController playerControllerScript;
     private int level=10;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +18,8 @@ public class LifeGain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
+        //TriggerStay(playerControllerScript);
     }
 
     void OnTriggerStay(Collider col)

@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LifeLoss : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    private ProgressBar Pb;
-    private PlayerController playerControllerScript;
-    private int level = 10;
+    public GameObject Pl;
+    public GameObject LifeLoss;
+    public GameObject LifeGain;
+    public ProgressBar Pb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Pb.BarValue = 100;
     }
 
     // Update is called once per frame

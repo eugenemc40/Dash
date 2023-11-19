@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10;
     public float speed = 10.0f;//player speed
     public float gravityModifier;
+    private ProgressBar Pb;
+    private int level = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +26,32 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         horizontalInput = Input.GetAxis("Horizontal");
         //updates movement to player based on time and speed
         transform.Translate(Vector3.left * horizontalInput * Time.deltaTime * speed);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
             playerRb.AddForce(Vector3.up * jumpForce);
-        } 
+        }
+        //CollisionEnter();
+    }
+    void onCollisionEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Plus")
+        {
+            if (Pb.BarValue < 100)
+            {
+                Pb.BarValue += level;
+            }
+        }
+        if (col.gameObject.tag == "Delete")
+        {
+            if (Pb.BarValue > 0)
+            {
+                Pb.BarValue -= level;
+            }
+        }
     }
 }
