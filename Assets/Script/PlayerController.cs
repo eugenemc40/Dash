@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10;
     public float speed = 10.0f;//player speed
     public float gravityModifier;
-    private ProgressBar Pb;
     private int level = 10;
     // Start is called before the first frame update
     void Start()

@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    public ProgressBar Pb;
+    public UnityEngine.UIElements.ProgressBar Pb;
 
 
     // Start is called before the first frame update
