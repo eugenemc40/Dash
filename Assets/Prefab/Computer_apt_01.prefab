@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3066722385346831348}
   - component: {fileID: 6026413060662261158}
   - component: {fileID: 373413436806495064}
+  - component: {fileID: -5935993670283292483}
   m_Layer: 0
   m_Name: Computer_apt_01
   m_TagString: Delete
@@ -127,3 +128,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67bdaba12df171418f1705611da99dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5935993670283292483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333079089323506275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08959fe26a20d3f43a3a99ba9c19e19a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8445481362402120691, guid: ee4d144458294b94289f81329a932a6d, type: 3}

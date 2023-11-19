@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -9,7 +10,6 @@ public class SpawnManager : MonoBehaviour
     private float spawnPosZ = 2.5f;
     private float startDelay = 2;
     private float spawnInterval = 2.5f;
-    public ProgressBar Pb;
     private PlayerController playerControllerScript;
 
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnItems", startDelay, spawnInterval);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
-        Pb.BarValue = 100;
+        
 
     }
     // Update is called once per frame
@@ -36,16 +36,5 @@ public class SpawnManager : MonoBehaviour
             itemPrefabs[itemIndex].transform.rotation);
        
     }
-    //method to reduce lifeloss
-    void lifeloss(GameObject item)
-    {
-    
-    }
-
-    //method to increase life
-    void lifegain(GameObject item)
-    {
-
-    }
-
+  
 }

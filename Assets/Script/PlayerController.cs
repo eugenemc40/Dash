@@ -35,23 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce);
         }
-        //CollisionEnter();
+        
     }
-    void onCollisionEnter(Collider col)
-    {
-        if (col.gameObject.tag == "Plus")
-        {
-            if (Pb.BarValue < 100)
-            {
-                Pb.BarValue += level;
-            }
-        }
-        if (col.gameObject.tag == "Delete")
-        {
-            if (Pb.BarValue > 0)
-            {
-                Pb.BarValue -= level;
-            }
-        }
-    }
+    
 }
