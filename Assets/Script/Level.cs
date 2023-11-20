@@ -13,25 +13,20 @@ public class Level : MonoBehaviour
     void Start()
     {
         //game object loaded with 3 hearts   
-        Pb.BarValue = 100;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //if statement for collion +/- lives 
-        
-        //if statement for run out of lives die
-        //if statement for over 4 lives text output say you have reached max
-    }
-    //method deduct life
 
-    private void OnCollisionEnter(Collision other)
-    {
-       
-            
-        
+        // Update is called once per frame
+        void Update()
+        {
+            //if statement for collion +/- lives 
+
+            //if statement for run out of lives die
+            //if statement for over 4 lives text output say you have reached max
+        }
+        //method deduct life
+
+
+        // Method add life
+
     }
-    // Method add life
-    
 }

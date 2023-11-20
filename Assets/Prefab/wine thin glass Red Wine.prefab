@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 5371647824902573502}
   - component: {fileID: 7753399556377014817}
   - component: {fileID: 2518105793313181373}
-  - component: {fileID: 7365542753632809807}
   m_Layer: 0
   m_Name: wine thin glass Red Wine
   m_TagString: Plus
@@ -210,17 +209,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f67bdaba12df171418f1705611da99dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7365542753632809807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6182905356868906395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 206ccc2a584156a43a2bf65016bed9c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
